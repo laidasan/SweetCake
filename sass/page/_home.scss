@@ -1,0 +1,16 @@
+.header {
+    padding: 3.6% 5%;
+    // padding: 36px 50px;
+}
+.banner {
+    position: relative;
+    padding: 360px 0;
+    margin: 0 5%;
+    background: url("../../img/image/home/banner.jfif") center center / cover;
+
+
+    @include respon('desktop') {
+        padding: 240px 0;
+    }
+    // < 1024 => padidng:250px 0;
+}
