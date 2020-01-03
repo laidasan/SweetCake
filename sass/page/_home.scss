@@ -16,8 +16,18 @@
 }
 
 .article {
-    margin-bottom: 120px;
+    & + & {
+        margin-top: 120px;
+    }
     padding: 60px 6%;
     position: relative;
     background: $color-primary-article;
+}
+
+.slogan {
+    padding: 120px 0;
+}
+
+.commodity {
+    padding: 0 5%;
 }

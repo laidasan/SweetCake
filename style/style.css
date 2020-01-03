@@ -1,4 +1,4 @@
-.article__img {
+.article__img, .commodity__img {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -23,6 +23,16 @@ html {
 .heading-thread {
   font-size: 24px;
   font-weight: 300; }
+
+.heading-secondary {
+  font-size: 42px;
+  font-weight: 400; }
+
+.u-color-primaryDark {
+  color: #3f5d45; }
+
+.u-color-primaryLight {
+  color: #8DA291; }
 
 .article__img-box {
   width: 460px;
@@ -127,6 +137,68 @@ html {
   left: 50%;
   transform: translateX(-50%); }
 
+.btn {
+  text-decoration: none;
+  display: inline-block; }
+
+.commodity-container {
+  display: flex;
+  justify-content: space-around; }
+
+.commodity-wrap {
+  max-width: 31%;
+  flex-shrink: 0;
+  box-shadow: 0 0 0px 1px #eaf0ed;
+  border-radius: 6px;
+  position: relative; }
+
+.commodity__img-box {
+  height: 315px; }
+
+.commodity-info {
+  color: #3f5d45;
+  font-size: 21px;
+  display: flex;
+  text-align: center; }
+
+.commodity__name {
+  padding: 15px 0;
+  font-family: 'Noto Serif TC', serif;
+  letter-spacing: 3px;
+  flex: 2; }
+
+.commodity__money {
+  border-left: 1px solid #eaf0ed;
+  padding: 15px 12px;
+  font-size: 18px;
+  flex: 1; }
+
+.commodity__btn {
+  text-align: center;
+  display: block;
+  font-size: 24px;
+  background: #eaf0ed;
+  padding: 15px 0; }
+
+.commodity__tag, .commodity__heart {
+  position: absolute;
+  top: 0; }
+
+.commodity__tag {
+  writing-mode: vertical-rl;
+  background: #3f5d45;
+  color: #fff;
+  padding: 12px;
+  letter-spacing: 6px;
+  left: 21px; }
+
+.commodity__heart {
+  vertical-align: middle;
+  font-size: 21px;
+  right: 21px;
+  top: 18px;
+  color: #3f5d45; }
+
 .header {
   overflow: hidden;
   display: flex; }
@@ -158,6 +230,20 @@ html {
       .header__nav__icon {
         font-size: 24px; } }
 
+.slogan__title {
+  writing-mode: vertical-rl;
+  margin: auto;
+  letter-spacing: 12px; }
+
+.slogan__line {
+  display: block;
+  position: relative; }
+  .slogan__line:nth-child(1) {
+    top: -18px; }
+  .slogan__line:nth-child(2) span {
+    position: absolute;
+    right: -10px; }
+
 .header {
   padding: 3.6% 5%; }
 
@@ -171,7 +257,14 @@ html {
       padding: 240px 0; } }
 
 .article {
-  margin-bottom: 120px;
   padding: 60px 6%;
   position: relative;
   background: #eaf0ed; }
+  .article + .article {
+    margin-top: 120px; }
+
+.slogan {
+  padding: 120px 0; }
+
+.commodity {
+  padding: 0 5%; }
