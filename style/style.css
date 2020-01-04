@@ -199,6 +199,81 @@ html {
   top: 18px;
   color: #3f5d45; }
 
+.contact-container {
+  overflow: hidden; }
+
+.contact__text {
+  float: left;
+  margin-right: 15%;
+  line-height: 40px;
+  color: #fff; }
+
+.contact__logo {
+  width: 40px;
+  float: left; }
+
+.contact__span {
+  margin-left: 60px; }
+
+.contact-form {
+  overflow: hidden;
+  font-size: 0;
+  display: flex; }
+
+.contact__label {
+  padding: 8px 0 8px 15px;
+  background: #fff; }
+
+.contact__emailIcon {
+  color: #3f5d45;
+  margin: auto;
+  font-size: 24px;
+  background: #fff; }
+
+.contact__email {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 11px; }
+
+.contact__btn {
+  padding: 8px 15px;
+  border: none;
+  background: #ffe180;
+  position: relative;
+  font-size: 24px;
+  color: #3f5d45; }
+
+.footer-content {
+  position: relative;
+  padding: 36px 12%; }
+  .footer-content__info {
+    color: #3f5d45;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 21px; }
+    .footer-content__info span {
+      display: block; }
+
+.footer__logo {
+  height: 40px;
+  margin-bottom: 120px; }
+
+.footer__slogan {
+  position: absolute;
+  writing-mode: vertical-rl;
+  top: 36px;
+  left: 0;
+  bottom: 0;
+  right: 6%; }
+  .footer__slogan__line {
+    display: block;
+    position: relative; }
+    .footer__slogan__line:nth-child(1) {
+      top: -15px; }
+    .footer__slogan__line:nth-child(2) span {
+      position: absolute;
+      right: -10px; }
+
 .header {
   overflow: hidden;
   display: flex; }
@@ -267,4 +342,8 @@ html {
   padding: 120px 0; }
 
 .commodity {
-  padding: 0 5%; }
+  padding: 60px 5%; }
+
+.contact {
+  padding: 36px 12%;
+  background: #3f5d45; }
