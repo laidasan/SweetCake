@@ -5,14 +5,29 @@
 .banner {
     position: relative;
     padding: 360px 0;
-    margin: 0 5% 270px;
-    background: url("../../img/image/home/banner.jfif") center center / cover;
+    margin: 0 5% 0px;
+    
+    &--home{
+        margin-bottom: 330px;
+    }
 
+
+    &--product {
+        // margin-bottom: 150px;
+    }
 
     @include respon('desktop') {
         padding: 240px 0;
+        &--home {
+            margin-bottom: 270px;
+        }
     }
-    // < 1024 => padidng:250px 0;
+
+
+    @include respon('mobile') {
+        margin: 0 0 240px;
+        // margin: 0;
+    }
 }
 
 .article {
@@ -22,14 +37,30 @@
     padding: 60px 6%;
     position: relative;
     background: $color-primary-article;
+    @include respon('mobile') {
+        padding: 0;
+        background: $color-white;
+
+        & + & {
+            margin-top: 192px;
+        }
+    }
 }
 
 .slogan {
     padding: 120px 0;
+
+    @include respon('mobile') {
+        padding: 30px 0;
+        margin-top: 192px;
+    }
 }
 
 .commodity {
     padding: 60px 5%;
+    @include respon('mobile') {
+        padding: 9px 0;
+    }
 }
 
 .contact {
@@ -37,7 +68,13 @@
     // padding: 36px 120px;
     padding: 36px 12%;
     background: $color-primary-greenDark;
+    @include respon('mobile') {
+        padding: 36px 0;
+    }
 }
 .footer {
     // padding: 36px 120px;
+    @include respon('mobile') {
+        padding: 15px 0;
+    }
 }

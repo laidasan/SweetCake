@@ -17,4 +17,22 @@
             }
         }
     }
+
+    @include respon('mobile') {
+        &__title {
+            writing-mode: initial;
+            text-align: center;
+            font-size: 24px;
+        }
+        &__line {
+            &:nth-child(1) {
+                top: 0;
+            }
+            &:nth-child(2) {
+                span {
+                    position: initial;
+                }
+            } 
+        }
+    }
 }
