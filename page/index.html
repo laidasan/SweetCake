@@ -16,15 +16,17 @@
 
 <body>
     <div class="header">
-        <div class="header__logo-box"><img src="../img/logo/logo-all-dark.svg" alt="" class="header__logo"></div>
+        <!-- <div class="header__logo-box"><img src="../img/logo/logo-all-dark.svg" alt="" class="header__logo"></div> -->
+        <div class="header__logo"></div>
         <div class="header__navigation">
             <nav class="header__nav">
                 <a href="index.html" class="header__nav__link">首頁</a>
                 <a href="product.html" class="header__nav__link">甜點</a>
                 <a href="#" class="header__nav__link">登入</a>
-                <i class="header__nav__icon fas fa-shopping-cart"></i>
+                <div class="header__nav__cancel"></div>
             </nav>
         </div>
+        <i class="header__icon fas fa-shopping-cart"></i>
     </div>
     <div class="banner banner--home">
         <div class="banner-container">
@@ -148,6 +150,7 @@
         </div>
     </footer>
     <script src="../js/app.js"></script>
+    <script src="../js/header.js"></script>
 </body>
 
 </html>
