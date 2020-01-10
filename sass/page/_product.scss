@@ -21,4 +21,20 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
+
+    @include respon('mobile') {
+        & {
+            flex-direction: column;
+            padding: 0;
+        }
+
+        &__list {
+            margin-bottom: 30px;
+        }
+
+        &__container {
+            max-width: initial;
+            padding: 0 6%;
+        }
+    }
 }

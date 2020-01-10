@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,30 +10,38 @@
     <link rel="stylesheet" href="../style/style.css">
     <title>Product</title>
 </head>
+
 <body>
     <div class="header">
-        <div class="header__logo-box"><img src="../img/logo/logo-all-dark.svg" alt="" class="header__logo"></div>
+        <!-- <div class="header__logo-box"><img src="../img/logo/logo-all-dark.svg" alt="" class="header__logo"></div> -->
+        <div class="header__logo"></div>
         <div class="header__navigation">
             <nav class="header__nav">
                 <a href="index.html" class="header__nav__link">首頁</a>
                 <a href="product.html" class="header__nav__link">甜點</a>
-                <a href="#" class="header__nav__link">登入</a>
-                <i class="header__nav__icon fas fa-shopping-cart"></i>
+                <a href="login.html" class="header__nav__link">登入</a>
+                <div class="header__nav__cancel"></div>
             </nav>
         </div>
+        <i class="header__icon fas fa-shopping-cart"></i>
     </div>
-    <div class="banner banner--product">
-    </div>
+    <div class="banner banner--product"></div>
     <div class="product">
         <ul class="product__list">
-            <li class="product__list__title"><h3 class="heading-thread">甜點類別</h3></li>
-            <li class="product__list__item"><a href="#" class="product__list__link btn btn--commodity u-color-primaryDark btn--bkGreen">所有甜點(48)</a></li>
-            <li class="product__list__item"><a href="#" class="product__list__link btn btn--commodity u-color-primaryDark btn--bkWhite">本來精選(10)</a></li>
-            <li class="product__list__item"><a href="#" class="product__list__link btn btn--commodity u-color-primaryDark btn--bkWhite">人氣推薦(26)</a></li>
-            <li class="product__list__item"><a href="#" class="product__list__link btn btn--commodity u-color-primaryDark btn--bkWhite">新品上市(12)</a></li>
+            <li class="product__list__title">
+                <h3 class="heading-thread">甜點類別</h3>
+            </li>
+            <li class="product__list__item"><a href="#"
+                    class="product__list__link btn btn--commodity u-color-primaryDark btn--bkGreen">所有甜點(48)</a></li>
+            <li class="product__list__item"><a href="#"
+                    class="product__list__link btn btn--commodity u-color-primaryDark btn--bkWhite">本來精選(10)</a></li>
+            <li class="product__list__item"><a href="#"
+                    class="product__list__link btn btn--commodity u-color-primaryDark btn--bkWhite">人氣推薦(26)</a></li>
+            <li class="product__list__item"><a href="#"
+                    class="product__list__link btn btn--commodity u-color-primaryDark btn--bkWhite">新品上市(12)</a></li>
         </ul>
         <div class="product__container">
-            <div class="commodity-wrap commodity-wrap--1-2 u-margin-bottom--middle">
+            <div class="commodity-wrap commodity-wrap--1-2 ">
                 <div class="commodity__img-box"><img src="../img/image/commodity/cake_1.jfif" alt=""
                         class="commodity__img"></div>
                 <div class="commodity-info">
@@ -43,7 +52,7 @@
                 <div class="commodity__tag">本日精選</div>
                 <div class="commodity__heart"><i class="far fa-heart"></i></div>
             </div>
-            <div class="commodity-wrap commodity-wrap--1-2 u-margin-bottom--middle">
+            <div class="commodity-wrap commodity-wrap--1-2 ">
                 <div class="commodity__img-box"><img src="../img/image/commodity/cake_1.jfif" alt=""
                         class="commodity__img"></div>
                 <div class="commodity-info">
@@ -54,7 +63,7 @@
                 <div class="commodity__tag">本日精選</div>
                 <div class="commodity__heart"><i class="far fa-heart"></i></div>
             </div>
-            <div class="commodity-wrap commodity-wrap--1-2 u-margin-bottom--middle">
+            <div class="commodity-wrap commodity-wrap--1-2 ">
                 <div class="commodity__img-box"><img src="../img/image/commodity/cake_1.jfif" alt=""
                         class="commodity__img"></div>
                 <div class="commodity-info">
@@ -65,7 +74,7 @@
                 <div class="commodity__tag">本日精選</div>
                 <div class="commodity__heart"><i class="far fa-heart"></i></div>
             </div>
-            <div class="commodity-wrap commodity-wrap--1-2 u-margin-bottom--middle">
+            <div class="commodity-wrap commodity-wrap--1-2 ">
                 <div class="commodity__img-box"><img src="../img/image/commodity/cake_1.jfif" alt=""
                         class="commodity__img"></div>
                 <div class="commodity-info">
@@ -76,7 +85,7 @@
                 <div class="commodity__tag">本日精選</div>
                 <div class="commodity__heart"><i class="far fa-heart"></i></div>
             </div>
-            <div class="commodity-wrap commodity-wrap--1-2 u-margin-bottom--middle">
+            <div class="commodity-wrap commodity-wrap--1-2 ">
                 <div class="commodity__img-box"><img src="../img/image/commodity/cake_1.jfif" alt=""
                         class="commodity__img"></div>
                 <div class="commodity-info">
@@ -87,7 +96,7 @@
                 <div class="commodity__tag">本日精選</div>
                 <div class="commodity__heart"><i class="far fa-heart"></i></div>
             </div>
-            <div class="commodity-wrap commodity-wrap--1-2 u-margin-bottom--middle">
+            <div class="commodity-wrap commodity-wrap--1-2 ">
                 <div class="commodity__img-box"><img src="../img/image/commodity/cake_1.jfif" alt=""
                         class="commodity__img"></div>
                 <div class="commodity-info">
@@ -124,10 +133,17 @@
                 <span class="footer-content__info__address">800 高雄市新興區幸福路 520號</span>
             </div>
             <h3 class="heading-thread u-color-primaryDark footer__slogan">
-                <span class="footer__slogan__line">今天是個——</span> 
-                <span class="footer__slogan__line">吃甜點的好日子 <span>。</span></span> 
+                <span class="footer__slogan__line">今天是個——</span>
+                <span class="footer__slogan__line">吃甜點的好日子 <span>。</span></span>
             </h3>
+            <ul class="footer__socialList">
+                <li class="footer__socialItem"><img src="../img/icon/ic-facebook.svg" alt="" class="footer__socialIcon"></li>
+                <li class="footer__socialItem"><img src="../img/icon/ic-line@.svg" alt="" class="footer__socialIcon"></li>
+            </ul>
+            <span class="footer__copyright">&copy; 2018 Sweetaste* All Rights Reserved</span>
         </div>
     </footer>
+    <script src="../js/header.js"></script>
 </body>
+
 </html>

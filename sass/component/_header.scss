@@ -67,6 +67,7 @@
     @include respon('mobile') {
         &__logo {
             background: url("../../img/logo/logotype-lg-dark.svg") no-repeat;
+            padding: 0;
         }
         &__navigation {
             order: -1;

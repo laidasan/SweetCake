@@ -98,6 +98,11 @@
         &__copyright {
             display: inline;
         }
+        
+        &__slogan {
+            opacity: 0;
+            visibility: hidden;
+        }
     }
 
 }

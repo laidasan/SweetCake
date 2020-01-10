@@ -12,6 +12,7 @@
     }
 
 
+
     &--product {
         // margin-bottom: 150px;
     }
@@ -25,8 +26,9 @@
 
 
     @include respon('mobile') {
-        margin: 0 0 240px;
-        // margin: 0;
+        &--home {
+            margin: 0 0 240px;
+        }
     }
 }
 
@@ -59,7 +61,7 @@
 .commodity {
     padding: 60px 5%;
     @include respon('mobile') {
-        padding: 9px 0;
+        padding: 0 0 36px;
     }
 }
 
@@ -68,6 +70,9 @@
     // padding: 36px 120px;
     padding: 36px 12%;
     background: $color-primary-greenDark;
+    @include respon('desktop') {
+        padding: 36px 6%;
+    }
     @include respon('mobile') {
         padding: 36px 0;
     }
@@ -76,5 +81,6 @@
     // padding: 36px 120px;
     @include respon('mobile') {
         padding: 15px 0;
+        padding: 0;
     }
 }
