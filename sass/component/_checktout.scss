@@ -1,0 +1,163 @@
+.checkout {
+    overflow: hidden;
+    padding: 0 12%;
+    &-trans {
+        padding: 21px 36px 0 36px;
+        float: left;
+        width: 100%;
+        // min-width: 60%;
+        max-width: 45%;
+        background: $color-primary-greenDark;
+        &__title {
+            padding: 0 30px;
+            color: $color-white;
+            margin-bottom: 21px;
+        }
+
+        &__form {
+            &__wrap {
+                margin-bottom: 30px;
+                &--2-1 {
+                    // &:nth-child(1) {
+                    //     margin-right: 1%;
+                    // }
+                    box-sizing: border-box;
+                    display: inline-block;
+                    // width: calc(99% / 2);
+                    width: 100%;
+                    max-width: 49.3%;
+                    // width: 50%;
+                    // > input {
+                    //     padding: 15px 21px 15px 15px;
+                    // }
+                }
+            }
+
+            &__label {
+                display: block;
+                color: $color-white;
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+            &__input {
+                border: none;
+                display: inline-block;
+                width: calc(100% - 15px);
+                font-size: 15px;
+                padding: 15px 0 15px 15px;
+                
+
+
+                &--tel {
+                    display: block;
+                }
+            }
+
+            &__select {
+                width: calc(98% / 2);
+                border: none;
+                padding: 15px 0 15px 15px;
+                margin: 0 0 15px 0;
+            }
+
+            &__submit {
+                display: block;
+                border: none;
+                font-size: 24px;
+                background: $color-primary-yellow;
+                width: calc(100% + 72px);
+                color: $color-primary-greenDark;
+                padding: 15px 0;
+                margin-left: -36px;
+                margin-top: 30px;
+            }
+
+        }
+    }
+    
+    &-info {
+        max-width: 40%;
+        margin:0 0 0 auto;
+        overflow: hidden;
+    }
+
+
+
+    &__pay {
+        margin-bottom: 30px;
+        box-shadow: 0 0 0 3px $color-primary-article;
+        align-self: flex-start;
+        &__title {
+            text-align: center;
+            color: $color-primary-greenLight;
+            background: $color-primary-article;
+            margin-bottom: 15px;
+            padding: 15px 18px;
+        }
+
+        &__wrap {
+            overflow: hidden;
+            padding: 0 18px;
+            color: $color-primary-greenLight;
+            font-size: 18px;
+            span:nth-child(1) {
+            }
+            span:nth-child(2) {
+                float: right; 
+            }
+        }
+
+        &__totalMoney {
+            font-size: 27px;
+            padding: 15px 18px;
+            span:nth-child(2) {
+                float: right; 
+            } 
+        }
+    }
+
+    &__buyingList {
+        &__title {
+            text-align: center;
+            color: $color-primary-greenLight;
+            background: $color-primary-article;
+            margin-bottom: 15px;
+            padding: 15px 18px;
+
+        }
+        &__list {
+            overflow: hidden;
+        }
+        &__item {
+            padding: 24px 0;
+            display: flex;
+            align-items: center;
+            &__imgbox {
+                // float: left;
+                // width: 120px;
+                max-width: 45%;
+                height: 150px;
+                @include respon('desktop') {
+                    height: 90px;
+                }
+            }
+            &__img {
+                @extend %img;
+            }
+            &__txt {
+                padding-left: 15px;
+            }
+            &__name {
+                font-size: 16px;
+                color: $color-primary-greenLight;
+                display: block;
+            }
+            &__money {
+                font-size: 24px;
+                font-weight: 700;
+                color: $color-primary-greenDark;
+                display: block;
+            }
+        }
+    }
+}
