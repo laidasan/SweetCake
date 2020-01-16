@@ -25,6 +25,7 @@
     </div>
     <section class="checkout">
         <div class="checkout-trans">
+            <div class="checkout-trans__circles"><div class="checkout-trans__circles__line"></div></div>
             <h3 class="heading-thread checkout-trans__title">運送</h3>
             <form action="get" class="checkout-trans__form">
                 <div class="checkout-trans__form__wrap checkout-trans__form__wrap--2-1">
@@ -41,19 +42,23 @@
                 </div>
                 <div class="checkout-trans__form__wrap">
                     <label for="City" class="checkout-trans__form__label">地址</label>
-                    <select class="checkout-trans__form__select" name="" id="City">
-                        <option value="高雄市">高雄市</option>
-                        <option value="南投市">南投市</option>
-                        <option value="台北市">台北市</option>
-                    </select>
-                    <select class="checkout-trans__form__select" name="" id="">
-                        <option value="一區">一區</option>
-                        <option value="二區">二區</option>
-                        <option value="三區">三區</option>
-                    </select>
+                    <div class="checkout-trans__form__selectGroup">
+                        <select class="checkout-trans__form__select" name="" id="City">
+                            <option value="高雄市">高雄市</option>
+                            <option value="南投市">南投市</option>
+                            <option value="台北市">台北市</option>
+                        </select>
+                    </div>
+                    <div class="checkout-trans__form__selectGroup">
+                        <select class="checkout-trans__form__select" name="" id="City">
+                            <option value="高雄市">高雄市</option>
+                            <option value="南投市">南投市</option>
+                            <option value="台北市">台北市</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="checkout-trans__form__wrap">
-                    <input type="text" name="address" id="address" class="checkout-trans__form__input">
+                    <input type="text" name="address" id="address" class="checkout-trans__form__input" placeholder="鄉鎮">
                 </div>
                 <button class="checkout-trans__form__submit">Next</button>
             </form>
