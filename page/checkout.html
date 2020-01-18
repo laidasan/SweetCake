@@ -7,11 +7,10 @@
     <link rel="stylesheet" href="../style/style.css">
     <script src="https://kit.fontawesome.com/ab4c3d994d.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
-    <title>cart</title>
+    <title>checkout</title>
 </head>
 <body>
     <div class="header">
-        <!-- <div class="header__logo-box"><img src="../img/logo/logo-all-dark.svg" alt="" class="header__logo"></div> -->
         <div class="header__logo"></div>
         <div class="header__navigation">
             <nav class="header__nav">
@@ -27,7 +26,7 @@
         <div class="checkout-trans">
             <div class="checkout-trans__circles"><div class="checkout-trans__circles__line"></div></div>
             <h3 class="heading-thread checkout-trans__title">運送</h3>
-            <form action="get" class="checkout-trans__form">
+            <form class="checkout-trans__form">
                 <div class="checkout-trans__form__wrap checkout-trans__form__wrap--2-1">
                     <label for="firstname" class="checkout-trans__form__label">姓氏</label>
                     <input type="text" name="" id="firstname" class="checkout-trans__form__input" placeholder="王">
@@ -50,7 +49,7 @@
                         </select>
                     </div>
                     <div class="checkout-trans__form__selectGroup">
-                        <select class="checkout-trans__form__select" name="" id="City">
+                        <select class="checkout-trans__form__select" name="" id="town">
                             <option value="高雄市">高雄市</option>
                             <option value="南投市">南投市</option>
                             <option value="台北市">台北市</option>
@@ -60,7 +59,8 @@
                 <div class="checkout-trans__form__wrap">
                     <input type="text" name="address" id="address" class="checkout-trans__form__input" placeholder="鄉鎮">
                 </div>
-                <button class="checkout-trans__form__submit">Next</button>
+                <!-- <button class="checkout-trans__form__submit">Next</button> -->
+                <a href="checkSuccess.html" class="checkout-trans__form__submit">Next</a>
             </form>
         </div>
         <div class="checkout-info">
@@ -142,5 +142,9 @@
         </div>
     </footer>
     <script src="../js/header.js"></script>
+    <script src="../js/checkout.js"></script>
+    <script>
+        console.log('cool');
+    </script>
 </body>
 </html>

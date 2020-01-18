@@ -204,6 +204,8 @@ html, input, button {
     background: #eaf0ed; }
   .btn--bkWhite {
     background: #fff; }
+  .btn--yellow {
+    background: #ffe180; }
   .btn--pay {
     display: block;
     font-size: 24px;
@@ -216,6 +218,17 @@ html, input, button {
     padding: 12px 18px;
     box-shadow: 0 0 1px #000;
     color: #3f5d45; }
+  .btn--checkSuccess {
+    display: block;
+    color: #3f5d45;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 18px 0;
+    margin: 0 33%; }
+    @media only screen and (max-width: 375px) {
+      .btn--checkSuccess {
+        margin: 0; } }
 
 .cart {
   padding: 0 5%; }
@@ -438,7 +451,8 @@ html, input, button {
         color: #3f5d45;
         padding: 15px 0;
         margin-left: -36px;
-        margin-top: 30px; }
+        margin-top: 30px;
+        text-align: center; }
         @media only screen and (max-width: 768px) {
           .checkout-trans__form__submit {
             width: calc(100% + 54px);
@@ -561,6 +575,81 @@ html, input, button {
       font-weight: 700;
       color: #3f5d45;
       display: block; }
+
+.checkSuccess {
+  background: url("../../img/image/checksuccess/banner.jfif") no-repeat center center/cover;
+  padding: 210px 0;
+  margin: 0 5%; }
+  .checkSuccess__circles {
+    position: absolute;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #3f5d45;
+    z-index: 3; }
+    .checkSuccess__circles::after {
+      content: '';
+      position: absolute;
+      left: 2px;
+      top: 16px;
+      height: 3px;
+      width: 12px;
+      transform-origin: 50% 50%;
+      transform: rotate(45deg);
+      background: #fff; }
+    .checkSuccess__circles::before {
+      content: '';
+      position: absolute;
+      right: 0;
+      left: 5px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 3px;
+      height: 0;
+      padding: 15px 0 3px;
+      background: #fff;
+      transform-origin: 50% 50%;
+      transform: rotate(45deg); }
+    .checkSuccess__circles:nth-child(1) {
+      left: 0; }
+    .checkSuccess__circles:nth-child(2) {
+      left: 0;
+      right: 0;
+      margin: 0 auto; }
+    .checkSuccess__circles:nth-child(3) {
+      right: 0; }
+  .checkSuccess__line {
+    position: absolute;
+    height: 0;
+    left: 0;
+    top: 15px;
+    right: 0;
+    padding: 1.5px 0;
+    z-index: 2;
+    background: #3f5d45; }
+  .checkSuccess__txt {
+    position: relative;
+    margin: 0 33%;
+    z-index: 1; }
+    .checkSuccess__txt__title {
+      text-align: center;
+      color: #3f5d45;
+      font-weight: 900;
+      padding: 60px 0 30px; }
+  @media only screen and (max-width: 1024px) {
+    .checkSuccess {
+      padding: 120px 0;
+      margin: 0; }
+      .checkSuccess-container {
+        padding: 0 33%; } }
+  @media only screen and (max-width: 375px) {
+    .checkSuccess {
+      padding: 180px 0 0; }
+      .checkSuccess__txt {
+        margin: 0px 15%;
+        padding: 0 0 150px; } }
 
 .commodity-container {
   display: flex;
