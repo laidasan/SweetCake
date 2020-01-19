@@ -66,9 +66,11 @@
     }
 
     @include respon('mobile') {
+        align-items: center;
         &__logo {
             background: url("../../img/logo/logotype-lg-dark.svg") no-repeat;
             padding: 0;
+            height: 21px;
         }
         &__navigation {
             order: -1;
